@@ -1,0 +1,104 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #eef2f3, #ffffff);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  margin-top: 60px;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  width: 92%;
+  max-width: 520px;
+  transition: all 0.3s ease;
+}
+
+.questao {
+  margin-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.questao:last-child {
+  border-bottom: none;
+}
+
+.questao h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+input {
+  padding: 12px;
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 12px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #329369;
+  outline: none;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #329369;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 8px;
+}
+
+button:hover {
+  background-color: #267256;
+}
+
+.resultado {
+  margin-top: 18px;
+  font-size: 17px;
+  color: #444;
+  background-color: #f9f9f9;
+  padding: 12px;
+  border-radius: 10px;
+  border-left: 4px solid #329369;
+  text-align: left;
+}
+
+#questao3 .resultado p {
+  margin: 8px 0;
+  font-size: 15px;
+  text-align: left;
+}
+
+ .tabela-faturamento {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+  }
+
+  .tabela-faturamento th,
+  .tabela-faturamento td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: right;
+  }
+
+  .tabela-faturamento th {
+    background-color: #f4f4f4;
+    text-align: center;
+  }

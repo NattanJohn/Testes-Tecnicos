@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Desafios de Lógica</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Desafios de Lógica</h1>
+
+            <!-- Questão 1 -->
+            <div class="questao" id="questao1">
+                <h2>Questão 1 - Soma de Números</h2>
+                <div class="resultado" id="resultado-soma"></div>
+            </div>
+
+            <!--Questão 2 -->
+            <div class="questao" id="questao2">
+                <h2>Questão 2 - Fibonacci</h2>
+                <input
+                    type="number"
+                    id="input-fibonacci"
+                    placeholder="Digite um número para verificar"
+                />
+                <button onclick="verifyFibonacci()">Verificar</button>
+                <div class="resultado" id="resultado-fibonacci"></div>
+            </div>
+
+            <!-- Questão 3 -->
+            <div class="questao" id="questao3">
+                <h2>Questão 3 - Faturamento Mensal</h2>
+                <table id="tabela-faturamento" class="tabela-faturamento">
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Faturamento (R$)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpo-tabela">
+                    </tbody>
+                </table>
+
+                <button onclick="Faturamento()">Analisar</button>
+                <div class="resultado" id="resultado-faturamento"></div>
+            </div>
+
+            <!-- Questão 4 -->
+            <div class="questao" id="questao4">
+                <h2>Questãp 4 - Percentual de Faturamento por Estado</h2>
+                <div class="resultado" id="resultado-estados"></div>
+                <canvas id="grafico-estados" width="300" height="300"></canvas>
+            </div>
+
+            <!-- Questão 5 -->
+            <div class="questao" id="questao5">
+                <h2>Questão 5 - Inverter String</h2>
+                <input
+                    type="text"
+                    id="input-string"
+                    placeholder="Digite uma palavra ou frase"
+                />
+                <button onclick="executarInversao()">Inverter</button>
+                <div class="resultado" id="resultado-inversao"></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
